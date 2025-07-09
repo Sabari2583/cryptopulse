@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #000;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark-mode {
+  background: #1a1a1a;
+  color: #fff;
+}
+header {
+  padding: 1rem;
+  background: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.crypto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 1rem;
+}
+.crypto-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+body.dark-mode .crypto-card {
+  background: #333;
+  border-color: #555;
+}
